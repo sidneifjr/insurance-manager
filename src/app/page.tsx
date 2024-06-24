@@ -1,4 +1,4 @@
-import { getContent } from '@/actions/getContent'
+import { getContent } from '@/api/getContent'
 import { H2 } from '@/components/typography/h2'
 import {
   Table,
@@ -9,25 +9,7 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { writeDataToDatabase } from '@/modules/writeDataToDatabase'
-
-interface Coberturas {
-  nome: string
-  valor: number
-}
-
-interface Segurado {
-  nome: string
-  email: string
-  cpfCnpj: string
-}
-
-interface User {
-  id: number
-  numero: number
-  valorPremio: number
-  segurado: Segurado
-  coberturas: Coberturas[]
-}
+import { User } from '@/types/user'
 
 export default async function Home() {
   const data = (await getContent()) as User[]
@@ -57,10 +39,10 @@ export default async function Home() {
             return (
               <TableRow key={item.id}>
                 <TableCell className="font-medium">{item.numero}</TableCell>
-                <TableCell>{item.valorPremio}</TableCell>
                 <TableCell>{item.segurado.nome}</TableCell>
                 <TableCell>{item.segurado.email}</TableCell>
                 <TableCell>{item.segurado.cpfCnpj}</TableCell>
+                <TableCell>{item.valorPremio}</TableCell>
 
                 {item.coberturas.map((cobertura) => {
                   return (
