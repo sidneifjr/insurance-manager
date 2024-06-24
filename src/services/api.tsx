@@ -13,7 +13,7 @@ import { env } from '@/env'
  **/
 
 export async function api(path: string, init?: RequestInit) {
-  const baseUrl = env.PUBLIC_USER_API
+  const baseUrl = env.NEXT_PUBLIC_API_BASE_URL
   const url = new URL(path, baseUrl)
 
   try {

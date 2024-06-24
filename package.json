@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "concurrently 'pnpm dlx json-server src/data/db.json --port 3001 --watch true' 'next dev --turbo'",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
     "test": "vitest",
+    "server": "pnpm dlx json-server src/data/db.json --port 3001 --watch true",
     "cy": "cypress open -b chrome --port 8080"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "geist": "^1.3.0",
+    "json-server": "1.0.0-beta.1",
     "lucide-react": "^0.396.0",
     "next": "14.2.4",
     "react": "^18",
@@ -24,6 +26,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@rocketseat/eslint-config": "^2.2.2",
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.0.0",

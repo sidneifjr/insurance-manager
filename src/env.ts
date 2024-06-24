@@ -1,7 +1,6 @@
 import { z } from 'zod'
 
 const envSchema = z.object({
-  EXAMPLE_API_KEY: z.string(),
   NEXT_PUBLIC_API_BASE_URL: z.string(),
 })
 
