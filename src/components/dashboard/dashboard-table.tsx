@@ -1,3 +1,5 @@
+'use client'
+
 import {
   CaseLower,
   Hash,
@@ -8,6 +10,13 @@ import {
 } from 'lucide-react'
 
 import {
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationNext,
+  PaginationPrevious,
+} from '@/components/ui/pagination'
+import {
   Table,
   TableBody,
   TableCell,
@@ -15,6 +24,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
+import { usePagination } from '@/hooks/usePagination'
 import { formatCurrency } from '@/modules/formatCurrency'
 import { User } from '@/types/user'
 
@@ -50,43 +60,83 @@ const tableCategories = [
 ]
 
 export function DashboardTable({ data }: DashboardTableTypes) {
+  const {
+    currentPage,
+    totalPages,
+    currentItems,
+    handleNextPage,
+    handlePreviousPage,
+  } = usePagination(data)
+
   return (
-    <Table>
-      <TableHeader>
-        <TableRow>
-          {tableCategories.map((category) => {
+    <>
+      <Table>
+        <TableHeader>
+          <TableRow>
+            {tableCategories.map((category) => {
+              return (
+                <TableHead key={crypto.randomUUID()}>
+                  <span className="flex items-center gap-2">
+                    {category.icon} {category.name}
+                  </span>
+                </TableHead>
+              )
+            })}
+          </TableRow>
+        </TableHeader>
+
+        <TableBody>
+          {currentItems.map((item) => {
             return (
-              <TableHead key={crypto.randomUUID()}>
-                <span className="flex items-center gap-2">
-                  {category.icon} {category.name}
-                </span>
-              </TableHead>
+              <TableRow key={item.id}>
+                <TableCell className="font-medium">{item.numero}</TableCell>
+                <TableCell>{formatCurrency(item.valorPremio)}</TableCell>
+                <TableCell>{item.segurado.nome}</TableCell>
+                <TableCell>{item.segurado.email}</TableCell>
+                <TableCell>{item.segurado.cpfCnpj}</TableCell>
+
+                {item.coberturas.map((cobertura) => {
+                  return (
+                    <TableCell key={crypto.randomUUID()}>
+                      {cobertura.nome}, {formatCurrency(cobertura.valor)}
+                    </TableCell>
+                  )
+                })}
+              </TableRow>
             )
           })}
-        </TableRow>
-      </TableHeader>
+        </TableBody>
+      </Table>
 
-      <TableBody>
-        {data.map((item) => {
-          return (
-            <TableRow key={item.id}>
-              <TableCell className="font-medium">{item.numero}</TableCell>
-              <TableCell>{formatCurrency(item.valorPremio)}</TableCell>
-              <TableCell>{item.segurado.nome}</TableCell>
-              <TableCell>{item.segurado.email}</TableCell>
-              <TableCell>{item.segurado.cpfCnpj}</TableCell>
+      <Pagination>
+        <PaginationContent className="flex gap-2">
+          <PaginationItem>
+            <PaginationPrevious
+              className={
+                currentPage - 1 > 0
+                  ? 'cursor-pointer'
+                  : 'pointer-events-none cursor-not-allowed text-gray-400'
+              }
+              onClick={(e) => handlePreviousPage(e)}
+            />
+          </PaginationItem>
 
-              {item.coberturas.map((cobertura) => {
-                return (
-                  <TableCell key={crypto.randomUUID()}>
-                    {cobertura.nome}, {formatCurrency(cobertura.valor)}
-                  </TableCell>
-                )
-              })}
-            </TableRow>
-          )
-        })}
-      </TableBody>
-    </Table>
+          <PaginationItem>
+            {currentPage} out of {totalPages}
+          </PaginationItem>
+
+          <PaginationItem>
+            <PaginationNext
+              className={
+                currentPage < totalPages
+                  ? 'cursor-pointer'
+                  : 'pointer-events-none cursor-not-allowed text-gray-400'
+              }
+              onClick={(e) => handleNextPage(e)}
+            />
+          </PaginationItem>
+        </PaginationContent>
+      </Pagination>
+    </>
   )
 }
