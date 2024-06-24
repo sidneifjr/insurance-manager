@@ -70,10 +70,10 @@ export function DashboardTable({ data }: DashboardTableTypes) {
           return (
             <TableRow key={item.id}>
               <TableCell className="font-medium">{item.numero}</TableCell>
+              <TableCell>{item.valorPremio}</TableCell>
               <TableCell>{item.segurado.nome}</TableCell>
               <TableCell>{item.segurado.email}</TableCell>
               <TableCell>{item.segurado.cpfCnpj}</TableCell>
-              <TableCell>{item.valorPremio}</TableCell>
 
               {item.coberturas.map((cobertura) => {
                 return (
