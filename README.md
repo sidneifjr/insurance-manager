@@ -8,14 +8,14 @@ Portanto, construa uma interface web, utilizando ReactJS e que atenda aos requis
 
 O prazo limite é de uma semana a partir do recebimento do teste.
 
-Hospede o código em uma plataforma de versionamento (github, gitlab e etc) e envie o link para o email jose_vinnicius@sicredi.com.br. Dúvidas tambem podem ser encaminhadas ao e-mail.
+Hospede o código em uma plataforma de versionamento (Github, Gitlab e etc) e envie o link para o email jose_vinnicius@sicredi.com.br. Dúvidas também podem ser encaminhadas ao e-mail.
 
 ## Requisitos
 
 - [x] ReactJS e Vite e/ou NextJS.
 - [x] Typescript.
 - [ ] A aplicação precisa ter interface coesa e responsiva.
-- [ ] Deve-se mockar a API baseando-se nos JSONS de exemplo (vide seção API). Recomendamos o uso da lib MirageJS mas qualquer outra pode ser utilizada.
+- [x] Deve-se mockar a API baseando-se nos JSONS de exemplo (vide seção API). Recomendamos o uso da lib MirageJS mas qualquer outra pode ser utilizada.
 - [ ] Todas as operações devem ser implementadas (CRUD).
 - [ ] Qualquer lib é liberada desde que importada corretamente.
 - [ ] Testes.
@@ -25,9 +25,11 @@ Hospede o código em uma plataforma de versionamento (github, gitlab e etc) e en
 
 ### Desenvolvimento.
 
-1. pnpm i, para instalar as dependências.
+1. Copie o conteúdo em `.env.example` para um arquivo `.env`.
 
-2. pnpm dev, para iniciar o servidor de desenvolvimento.
+2. pnpm i, para instalar as dependências.
+
+3. pnpm dev, para iniciar o servidor de desenvolvimento.
 
 ### Produção.
 
@@ -45,6 +47,7 @@ pnpm test.
 
 - React
 - Next.js
+- Node.js (20.12.2)
 - TypeScript
 - ESLint/Prettier
 - TailwindCSS
