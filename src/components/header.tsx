@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+import { ShieldPlus } from 'lucide-react'
 import Link from 'next/link'
 
 import {
@@ -11,13 +11,13 @@ import {
 
 const menuItens = [
   {
-    name: 'Carrinho',
+    name: 'Item 1',
     url: '/cart',
     image: '/cart.svg',
     alt: 'Carrinho',
   },
   {
-    name: 'Entrar',
+    name: 'Item 2',
     url: '/login',
     image: '/customer.svg',
     alt: 'Entrar',
@@ -27,40 +27,26 @@ const menuItens = [
 export function Header() {
   return (
     <header
-      className="border-b-[1px] border-b-[#f3f4f6] px-5 py-5"
+      className="flex h-16 items-center border-b border-b-gray-400 px-6"
       data-testid="header"
     >
-      <div className="mx-auto flex max-w-[1232px] items-center justify-between">
-        <Link href="/">
-          <Image
-            src="/logo.svg"
-            alt="Flow Lab Tech"
-            width={147}
-            height={24}
-            quality={100}
-            priority={true}
-            className="w-24 xs:w-auto"
-          />
+      <div className="flex w-full items-center justify-between gap-12">
+        <Link href="/" className="flex gap-2 tracking-tight">
+          <ShieldPlus />
+          Sebastian
         </Link>
 
-        <NavigationMenu>
+        <NavigationMenu className="flex items-center justify-between">
           <NavigationMenuList className="gap-2 lg:gap-9">
             {menuItens.map(({ name, url, image, alt }) => {
               return (
                 <NavigationMenuItem key={crypto.randomUUID()}>
                   {' '}
-                  <Link href={url} className="flex cursor-pointer gap-3">
-                    <span className="relative flex cursor-pointer gap-1 text-sm leading-6 text-gray-500 xs:gap-3">
-                      <Image
-                        src={image}
-                        alt={alt}
-                        width={13}
-                        height={11}
-                        className="h-auto w-auto"
-                      />
-
-                      {name}
-                    </span>
+                  <Link
+                    href={url}
+                    className="flex cursor-pointer gap-2 text-sm tracking-tight"
+                  >
+                    <span className="">{name}</span>
                   </Link>
                 </NavigationMenuItem>
               )

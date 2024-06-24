@@ -1,9 +1,10 @@
 import './globals.css'
 
+import { GeistSans } from 'geist/font/sans'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+import { Header } from '@/components/header'
+import { SideMenu } from '@/components/side-menu'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +18,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`flex min-h-screen flex-col ${GeistSans.className}`}>
+        <Header />
+
+        <main className="grid flex-1 grid-cols-12">
+          <SideMenu />
+
+          <section className="col-span-10 p-4">{children}</section>
+        </main>
+      </body>
     </html>
   )
 }
