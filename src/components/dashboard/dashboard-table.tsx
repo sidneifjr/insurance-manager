@@ -15,6 +15,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
+import { formatCurrency } from '@/modules/formatCurrency'
 import { User } from '@/types/user'
 
 type DashboardTableTypes = {
@@ -70,7 +71,7 @@ export function DashboardTable({ data }: DashboardTableTypes) {
           return (
             <TableRow key={item.id}>
               <TableCell className="font-medium">{item.numero}</TableCell>
-              <TableCell>{item.valorPremio}</TableCell>
+              <TableCell>{formatCurrency(item.valorPremio)}</TableCell>
               <TableCell>{item.segurado.nome}</TableCell>
               <TableCell>{item.segurado.email}</TableCell>
               <TableCell>{item.segurado.cpfCnpj}</TableCell>
@@ -78,7 +79,7 @@ export function DashboardTable({ data }: DashboardTableTypes) {
               {item.coberturas.map((cobertura) => {
                 return (
                   <TableCell key={crypto.randomUUID()}>
-                    {cobertura.nome}, {cobertura.valor}
+                    {cobertura.nome}, {formatCurrency(cobertura.valor)}
                   </TableCell>
                 )
               })}
