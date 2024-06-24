@@ -1,4 +1,13 @@
 import {
+  CaseLower,
+  Hash,
+  Hospital,
+  Mail,
+  ShieldAlert,
+  Trophy,
+} from 'lucide-react'
+
+import {
   Table,
   TableBody,
   TableCell,
@@ -8,18 +17,51 @@ import {
 } from '@/components/ui/table'
 import { User } from '@/types/user'
 
-export function DashboardTable({ data }: { data: User[] }) {
+type DashboardTableTypes = {
+  data: User[]
+}
+
+const tableCategories = [
+  {
+    name: 'Número',
+    icon: <Hash />,
+  },
+  {
+    name: 'Valor Prêmio',
+    icon: <Trophy />,
+  },
+  {
+    name: 'Nome',
+    icon: <CaseLower />,
+  },
+  {
+    name: 'Email',
+    icon: <Mail />,
+  },
+  {
+    name: 'CPF/CNPJ',
+    icon: <ShieldAlert />,
+  },
+  {
+    name: 'Coberturas',
+    icon: <Hospital />,
+  },
+]
+
+export function DashboardTable({ data }: DashboardTableTypes) {
   return (
     <Table>
       <TableHeader>
         <TableRow>
-          <TableHead>Número</TableHead>
-          <TableHead>Valor Prêmio</TableHead>
-          <TableHead>Nome</TableHead>
-          <TableHead>Email</TableHead>
-          <TableHead>CPF/CNPJ</TableHead>
-          <TableHead>Coberturas Nome</TableHead>
-          <TableHead>Coberturas Valor</TableHead>
+          {tableCategories.map((category) => {
+            return (
+              <TableHead key={crypto.randomUUID()}>
+                <span className="flex items-center gap-2">
+                  {category.icon} {category.name}
+                </span>
+              </TableHead>
+            )
+          })}
         </TableRow>
       </TableHeader>
 
@@ -35,10 +77,9 @@ export function DashboardTable({ data }: { data: User[] }) {
 
               {item.coberturas.map((cobertura) => {
                 return (
-                  <>
-                    <TableCell>{cobertura.nome}</TableCell>
-                    <TableCell>{cobertura.valor}</TableCell>
-                  </>
+                  <TableCell key={crypto.randomUUID()}>
+                    {cobertura.nome}, {cobertura.valor}
+                  </TableCell>
                 )
               })}
             </TableRow>

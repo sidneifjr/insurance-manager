@@ -1,6 +1,7 @@
 import { getContent } from '@/api/getContent'
 import { DashboardTable } from '@/components/dashboard/dashboard-table'
 import { H2 } from '@/components/typography/h2'
+import { Paragraph } from '@/components/typography/paragraph'
 import { writeDataToDatabase } from '@/modules/writeDataToDatabase'
 
 export default async function Home() {
@@ -9,10 +10,16 @@ export default async function Home() {
   const data = await getContent()
 
   return (
-    <>
-      <H2>Visão Geral</H2>
+    <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-1">
+        <H2>Visão Geral</H2>
+
+        <Paragraph>
+          Confira os dados mais importantes dos assegurados cadastrados.
+        </Paragraph>
+      </div>
 
       <DashboardTable data={data} />
-    </>
+    </div>
   )
 }
