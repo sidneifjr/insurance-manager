@@ -2,7 +2,13 @@ import { faker } from '@faker-js/faker'
 
 import { User } from '@/types/user'
 
+/**
+ * A cada execução do script 'dev', um novo db é gerado.
+ * 'seed' garante que tais valores se manterão durante aquela execução da aplicação.
+ */
 export async function generateFakeData() {
+  faker.seed(123)
+
   const data: { content: User[] } = {
     content: [],
   }
