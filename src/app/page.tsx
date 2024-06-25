@@ -1,4 +1,4 @@
-import { getContent } from '@/api/getContent'
+import { getItems } from '@/api/getItems'
 import { DashboardTable } from '@/components/dashboard/dashboard-table'
 import { ModalForm } from '@/components/modal/modal-form'
 import { H2 } from '@/components/typography/h2'
@@ -8,7 +8,7 @@ import { writeDataToDatabase } from '@/modules/writeDataToDatabase'
 export default async function Home() {
   await writeDataToDatabase()
 
-  const data = await getContent()
+  const data = await getItems()
 
   return (
     <div className="flex flex-col gap-4">
