@@ -27,12 +27,12 @@ export async function createItem(data: ModalFormInputs) {
           email: data.email,
           cpfCnpj: data.cpfCNPJ,
         },
-        // coberturas: [
-        //   {
-        //     nome: 'Incêndio',
-        //     valor: 511.76,
-        //   },
-        // ],
+        coberturas: [
+          {
+            nome: 'Incêndio',
+            valor: 511.76,
+          },
+        ],
       }),
     })
 
