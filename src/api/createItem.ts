@@ -1,4 +1,5 @@
 import { api } from '@/services/api'
+import { User } from '@/types/user'
 
 type ModalFormInputs = {
   numero: string
@@ -9,17 +10,16 @@ type ModalFormInputs = {
   coberturas: string
 }
 
-// todo: verificar se o item já existe, antes de adicioná-lo.
 export async function createItem(data: ModalFormInputs) {
   try {
-    const test = await api('/content', {
+    const test: Promise<User> = (await api('/content', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
       },
 
       body: JSON.stringify({
-        id: crypto.randomUUID(),
+        id: Number(Math.round(Math.random() * 10000)),
         numero: data.numero,
         valorPremio: data.valorPremio,
         segurado: {
@@ -34,7 +34,7 @@ export async function createItem(data: ModalFormInputs) {
           },
         ],
       }),
-    })
+    })) as Promise<User>
 
     return test
   } catch (error) {
