@@ -1,4 +1,4 @@
-import { env } from '@/env'
+// import { env } from '@/env'
 
 /**
  * A fetch API wrapper.
@@ -13,7 +13,8 @@ import { env } from '@/env'
  **/
 
 export async function api(path: string, init?: RequestInit) {
-  const baseUrl = env.NEXT_PUBLIC_API_BASE_URL
+  // const baseUrl = env.PUBLIC_API_BASE_URL
+  const baseUrl = 'http://localhost:3001'
   const url = new URL(path, baseUrl)
 
   try {
