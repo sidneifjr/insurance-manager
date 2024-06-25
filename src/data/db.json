@@ -1,802 +1,818 @@
 {
   "content": [
     {
-      "id": 1,
-      "numero": 497964,
-      "valorPremio": "200.69",
+      "id": "0",
+      "numero": 726822,
+      "valorPremio": 712.96,
       "segurado": {
-        "nome": "Cesar Torp",
-        "email": "Raegan18@gmail.com",
-        "cpfCnpj": "hBdLe5EgUkr"
+        "nome": "Jessie Pollich",
+        "email": "Milo41@hotmail.com",
+        "cpfCnpj": "Gzt8oolCJkr"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "21.43"
+          "valor": 244.76
         }
       ]
     },
     {
-      "id": 2,
-      "numero": 504885,
-      "valorPremio": "359.98",
+      "id": "1",
+      "numero": 153710,
+      "valorPremio": 694.76,
       "segurado": {
-        "nome": "Melanie Jacobs",
-        "email": "Chasity44@hotmail.com",
-        "cpfCnpj": "SXpNP3cs48t"
+        "nome": "Sherri Murray",
+        "email": "Chanelle42@yahoo.com",
+        "cpfCnpj": "DiQuIJBmIpk"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "37.45"
+          "valor": 654.72
         }
       ]
     },
     {
-      "id": 3,
-      "numero": 895172,
-      "valorPremio": "376.00",
+      "id": "2",
+      "numero": 425609,
+      "valorPremio": 373.8,
       "segurado": {
-        "nome": "Kathleen Emmerich III",
-        "email": "Laurel_Bashirian37@gmail.com",
-        "cpfCnpj": "CwjIwQGFWWE"
+        "nome": "Kim Yundt",
+        "email": "Audreanne.Kerluke17@hotmail.com",
+        "cpfCnpj": "u9q4jTqKTGW"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "27.80"
+          "valor": 511.76
         }
       ]
     },
     {
-      "id": 4,
-      "numero": 696869,
-      "valorPremio": "369.41",
+      "id": "3",
+      "numero": 551653,
+      "valorPremio": 464.27,
       "segurado": {
-        "nome": "Dr. Guy Mueller-Hayes DDS",
-        "email": "Russell50@yahoo.com",
-        "cpfCnpj": "lton55qnbEB"
+        "nome": "Marshall Gutmann",
+        "email": "Haskell10@yahoo.com",
+        "cpfCnpj": "tuZewrBK7tP"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "40.24"
+          "valor": 797.73
         }
       ]
     },
     {
-      "id": 5,
-      "numero": 631341,
-      "valorPremio": "252.62",
+      "id": "4",
+      "numero": 642754,
+      "valorPremio": 282.7,
       "segurado": {
-        "nome": "Jeanette Streich",
-        "email": "Yasmin_Goodwin36@hotmail.com",
-        "cpfCnpj": "s9z7RGTjtRN"
+        "nome": "Andre Altenwerth",
+        "email": "Hayley26@yahoo.com",
+        "cpfCnpj": "vsFgAPCgFwQ"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "49.01"
+          "valor": 175.37
         }
       ]
     },
     {
-      "id": 6,
-      "numero": 286385,
-      "valorPremio": "243.36",
+      "id": "5",
+      "numero": 174875,
+      "valorPremio": 314.96,
       "segurado": {
-        "nome": "Keith Oberbrunner",
-        "email": "Savannah_Ritchie25@hotmail.com",
-        "cpfCnpj": "pFkknRG45yi"
+        "nome": "Doyle Davis",
+        "email": "Kiara_Boyer@yahoo.com",
+        "cpfCnpj": "9CUIZ1tAjyv"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "35.58"
+          "valor": 158.96
         }
       ]
     },
     {
-      "id": 7,
-      "numero": 308241,
-      "valorPremio": "352.42",
+      "id": "6",
+      "numero": 352713,
+      "valorPremio": 153.07,
       "segurado": {
-        "nome": "Carrie Bergnaum",
-        "email": "Kylie_Koepp52@yahoo.com",
-        "cpfCnpj": "CR1eZoJhusL"
+        "nome": "Willis Hamill",
+        "email": "Tabitha.Erdman@hotmail.com",
+        "cpfCnpj": "VRQImo2eino"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "46.50"
+          "valor": 549.16
         }
       ]
     },
     {
-      "id": 8,
-      "numero": 708738,
-      "valorPremio": "369.99",
+      "id": "7",
+      "numero": 734462,
+      "valorPremio": 556.72,
       "segurado": {
-        "nome": "Theodore Stracke",
-        "email": "Arnulfo_Waters66@gmail.com",
-        "cpfCnpj": "h2rK16s8jcp"
+        "nome": "Robert Nienow",
+        "email": "Laura29@gmail.com",
+        "cpfCnpj": "oLemlSv1Fy6"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "20.75"
+          "valor": 240.24
         }
       ]
     },
     {
-      "id": 9,
-      "numero": 290872,
-      "valorPremio": "148.08",
+      "id": "8",
+      "numero": 217805,
+      "valorPremio": 884.81,
       "segurado": {
-        "nome": "Jan Bauch",
-        "email": "Kenny.Kohler91@gmail.com",
-        "cpfCnpj": "6zqXF5b8cDh"
+        "nome": "Ms. Georgia Dickinson",
+        "email": "Rebeca_Macejkovic@yahoo.com",
+        "cpfCnpj": "jOlRapP3kty"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "37.57"
+          "valor": 521.16
         }
       ]
     },
     {
-      "id": 10,
-      "numero": 946955,
-      "valorPremio": "341.87",
+      "id": "9",
+      "numero": 620696,
+      "valorPremio": 580.63,
       "segurado": {
-        "nome": "Ervin Green",
-        "email": "Buster.Botsford@gmail.com",
-        "cpfCnpj": "uS6AOGFQ7wN"
+        "nome": "Dr. Calvin Waelchi PhD",
+        "email": "Corbin_Greenholt@yahoo.com",
+        "cpfCnpj": "hTiYyfIywOl"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "42.11"
+          "valor": 394.37
         }
       ]
     },
     {
-      "id": 11,
-      "numero": 633245,
-      "valorPremio": "112.33",
+      "id": "10",
+      "numero": 669500,
+      "valorPremio": 731.08,
       "segurado": {
-        "nome": "Monique D'Amore",
-        "email": "Jeramy_Pouros11@gmail.com",
-        "cpfCnpj": "PPCpVAYERbn"
+        "nome": "Dr. Carlos Mills II",
+        "email": "Reyes.Bergnaum@hotmail.com",
+        "cpfCnpj": "cSrUxc51iOV"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "45.39"
+          "valor": 241.83
         }
       ]
     },
     {
-      "id": 12,
-      "numero": 487677,
-      "valorPremio": "266.52",
+      "id": "11",
+      "numero": 612103,
+      "valorPremio": 56.08,
       "segurado": {
-        "nome": "Dr. Eugene Jast",
-        "email": "Sheila83@yahoo.com",
-        "cpfCnpj": "iLkbUH8RYAB"
+        "nome": "Rebecca Krajcik",
+        "email": "Amalia_Quitzon38@yahoo.com",
+        "cpfCnpj": "aOMOhGjZFp6"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "45.41"
+          "valor": 190.17
         }
       ]
     },
     {
-      "id": 13,
-      "numero": 668183,
-      "valorPremio": "486.97",
+      "id": "12",
+      "numero": 698385,
+      "valorPremio": 488.17,
       "segurado": {
-        "nome": "Ms. Lena Schumm MD",
-        "email": "Piper.Grant66@hotmail.com",
-        "cpfCnpj": "WnMjcA9nYQ4"
+        "nome": "Guy Jacobson",
+        "email": "Ian_Runolfsdottir@gmail.com",
+        "cpfCnpj": "g5SAAOtkaV3"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "26.89"
+          "valor": 750.72
         }
       ]
     },
     {
-      "id": 14,
-      "numero": 367150,
-      "valorPremio": "211.74",
+      "id": "13",
+      "numero": 241331,
+      "valorPremio": 574.06,
       "segurado": {
-        "nome": "Mr. Eric Buckridge",
-        "email": "Sibyl.Larson97@hotmail.com",
-        "cpfCnpj": "3ENQd8Oir9m"
+        "nome": "Della Block",
+        "email": "Constantin12@hotmail.com",
+        "cpfCnpj": "45u8Ho5qRyq"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "31.08"
+          "valor": 122.24
         }
       ]
     },
     {
-      "id": 15,
-      "numero": 649625,
-      "valorPremio": "239.88",
+      "id": "14",
+      "numero": 544897,
+      "valorPremio": 201.4,
       "segurado": {
-        "nome": "Paula O'Connell I",
-        "email": "Deanna98@hotmail.com",
-        "cpfCnpj": "1icUstvMYUk"
+        "nome": "Rachael Koss DDS",
+        "email": "Adam_Lubowitz@hotmail.com",
+        "cpfCnpj": "zAqchIgnGFP"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "27.07"
+          "valor": 29.32
         }
       ]
     },
     {
-      "id": 16,
-      "numero": 369228,
-      "valorPremio": "472.50",
+      "id": "15",
+      "numero": 633152,
+      "valorPremio": 635.9,
       "segurado": {
-        "nome": "Dr. Ramon Jacobson",
-        "email": "Allie_Okuneva25@gmail.com",
-        "cpfCnpj": "BCCI4NwBRYu"
+        "nome": "Donna Rodriguez",
+        "email": "Maye.Wintheiser@yahoo.com",
+        "cpfCnpj": "43EAZKLvzV6"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "17.44"
+          "valor": 303.96
         }
       ]
     },
     {
-      "id": 17,
-      "numero": 944577,
-      "valorPremio": "281.54",
+      "id": "16",
+      "numero": 729850,
+      "valorPremio": 493,
       "segurado": {
-        "nome": "Ms. Viola Greenholt",
-        "email": "Annalise.Durgan@hotmail.com",
-        "cpfCnpj": "UTIbX7Lugjb"
+        "nome": "Mr. Emilio Hane",
+        "email": "Elmer41@yahoo.com",
+        "cpfCnpj": "3tObBjEQKbx"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "14.89"
+          "valor": 417.29
         }
       ]
     },
     {
-      "id": 18,
-      "numero": 545279,
-      "valorPremio": "418.25",
+      "id": "17",
+      "numero": 198240,
+      "valorPremio": 989.04,
       "segurado": {
-        "nome": "Tyrone Nicolas",
-        "email": "Skylar.Dickinson46@hotmail.com",
-        "cpfCnpj": "OfXly9oDYrg"
+        "nome": "Sherry Von",
+        "email": "Justice.Muller@hotmail.com",
+        "cpfCnpj": "vujO28e75re"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "11.94"
+          "valor": 40.93
         }
       ]
     },
     {
-      "id": 19,
-      "numero": 738781,
-      "valorPremio": "207.39",
+      "id": "18",
+      "numero": 827011,
+      "valorPremio": 300.51,
       "segurado": {
-        "nome": "Wesley Conroy",
-        "email": "Duncan_Blanda57@yahoo.com",
-        "cpfCnpj": "qMPD5U9fw72"
+        "nome": "Angel Hintz",
+        "email": "Will_Lindgren@yahoo.com",
+        "cpfCnpj": "y07uMZqn46b"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "37.79"
+          "valor": 461.91
         }
       ]
     },
     {
-      "id": 20,
-      "numero": 232844,
-      "valorPremio": "385.48",
+      "id": "19",
+      "numero": 568909,
+      "valorPremio": 963.01,
       "segurado": {
-        "nome": "Tracy Kris",
-        "email": "Brannon.Fahey@hotmail.com",
-        "cpfCnpj": "MWV7tpCBSab"
+        "nome": "Dolores Schmeler",
+        "email": "Lauryn_Franey@hotmail.com",
+        "cpfCnpj": "IipTbAXIEGR"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "17.28"
+          "valor": 946.63
         }
       ]
     },
     {
-      "id": 21,
-      "numero": 961408,
-      "valorPremio": "267.91",
+      "id": "20",
+      "numero": 122718,
+      "valorPremio": 913.24,
       "segurado": {
-        "nome": "Claire Moore",
-        "email": "Michael16@yahoo.com",
-        "cpfCnpj": "fLcFfDp09rR"
+        "nome": "Jessica Hoeger",
+        "email": "Zackary.Feil@yahoo.com",
+        "cpfCnpj": "jdZ6zeDioDK"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "34.13"
+          "valor": 281.23
         }
       ]
     },
     {
-      "id": 22,
-      "numero": 849044,
-      "valorPremio": "371.42",
+      "id": "21",
+      "numero": 461067,
+      "valorPremio": 362.28,
       "segurado": {
-        "nome": "Bradley Wuckert Sr.",
-        "email": "Josue14@gmail.com",
-        "cpfCnpj": "n1dDdk32yVt"
+        "nome": "Robert Hickle-Cummings",
+        "email": "Carolyne.Metz@yahoo.com",
+        "cpfCnpj": "iDo1PTE0X7t"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "42.23"
+          "valor": 777.17
         }
       ]
     },
     {
-      "id": 23,
-      "numero": 525801,
-      "valorPremio": "309.98",
+      "id": "22",
+      "numero": 891004,
+      "valorPremio": 45.89,
       "segurado": {
-        "nome": "Katherine Hermann",
-        "email": "Hailey8@gmail.com",
-        "cpfCnpj": "q5QQCxXLfUg"
+        "nome": "Rudolph Witting",
+        "email": "Rene42@hotmail.com",
+        "cpfCnpj": "FSHmsV49ZWD"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "12.54"
+          "valor": 832.72
         }
       ]
     },
     {
-      "id": 24,
-      "numero": 149920,
-      "valorPremio": "358.95",
+      "id": "23",
+      "numero": 161337,
+      "valorPremio": 846.06,
       "segurado": {
-        "nome": "Carmen D'Amore Jr.",
-        "email": "Vito75@yahoo.com",
-        "cpfCnpj": "2SYoqvyYQO1"
+        "nome": "Joan Metz",
+        "email": "Kamille_Bode8@gmail.com",
+        "cpfCnpj": "mdjSEmmxIzC"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "12.00"
+          "valor": 225.46
         }
       ]
     },
     {
-      "id": 25,
-      "numero": 940989,
-      "valorPremio": "85.19",
+      "id": "24",
+      "numero": 970760,
+      "valorPremio": 572.15,
       "segurado": {
-        "nome": "Ms. Melanie Crooks III",
-        "email": "Deven_Becker@gmail.com",
-        "cpfCnpj": "xTTVrCiLvky"
+        "nome": "Amelia Gusikowski",
+        "email": "Simeon58@yahoo.com",
+        "cpfCnpj": "0WTylvD0ktT"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "22.52"
+          "valor": 927.46
         }
       ]
     },
     {
-      "id": 26,
-      "numero": 672071,
-      "valorPremio": "262.19",
+      "id": "25",
+      "numero": 756390,
+      "valorPremio": 198.36,
       "segurado": {
-        "nome": "Dr. Clara Mayert DVM",
-        "email": "Janice.Strosin@hotmail.com",
-        "cpfCnpj": "W79gBfG8eXw"
+        "nome": "Shirley Jaskolski III",
+        "email": "Ruth68@yahoo.com",
+        "cpfCnpj": "vUwBzOPkllU"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "40.54"
+          "valor": 389.87
         }
       ]
     },
     {
-      "id": 27,
-      "numero": 836322,
-      "valorPremio": "206.80",
+      "id": "26",
+      "numero": 460370,
+      "valorPremio": 754.8,
       "segurado": {
-        "nome": "Monique Fritsch",
-        "email": "Ludie.Lubowitz60@hotmail.com",
-        "cpfCnpj": "EzdBQE4XH8O"
+        "nome": "Roberta Flatley",
+        "email": "Jamie.OConnell@hotmail.com",
+        "cpfCnpj": "DTgtchkpkpS"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "45.69"
+          "valor": 771.31
         }
       ]
     },
     {
-      "id": 28,
-      "numero": 251612,
-      "valorPremio": "366.73",
+      "id": "27",
+      "numero": 840073,
+      "valorPremio": 737.95,
       "segurado": {
-        "nome": "Ana Bauch",
-        "email": "Judson_Hilll44@yahoo.com",
-        "cpfCnpj": "UfiO2zVki5x"
+        "nome": "Mr. Javier Kuvalis-Jones",
+        "email": "Bianka33@hotmail.com",
+        "cpfCnpj": "5xBzm4zGbIF"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "25.93"
+          "valor": 552.48
         }
       ]
     },
     {
-      "id": 29,
-      "numero": 992266,
-      "valorPremio": "362.27",
+      "id": "28",
+      "numero": 293954,
+      "valorPremio": 504.96,
       "segurado": {
-        "nome": "Deborah Mante",
-        "email": "Assunta.Kutch@gmail.com",
-        "cpfCnpj": "bCTZmPdnizt"
+        "nome": "Carolyn McClure",
+        "email": "Esther8@yahoo.com",
+        "cpfCnpj": "UYA7e6KvMrc"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "22.24"
+          "valor": 182.5
         }
       ]
     },
     {
-      "id": 30,
-      "numero": 807513,
-      "valorPremio": "432.45",
+      "id": "29",
+      "numero": 838516,
+      "valorPremio": 420.54,
       "segurado": {
-        "nome": "Dr. Mona Muller",
-        "email": "Marc_Hegmann@yahoo.com",
-        "cpfCnpj": "61FTTXzCexl"
+        "nome": "Lynette Roob",
+        "email": "Esteban_Wilkinson@gmail.com",
+        "cpfCnpj": "yLqGmcwtpO1"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "18.58"
+          "valor": 675.04
         }
       ]
     },
     {
-      "id": 31,
-      "numero": 441079,
-      "valorPremio": "328.73",
+      "id": "30",
+      "numero": 148570,
+      "valorPremio": 6.02,
       "segurado": {
-        "nome": "Miss Tricia Jacobson",
-        "email": "Isabell_Hane@hotmail.com",
-        "cpfCnpj": "s1q7RB7LPur"
+        "nome": "Marie Heidenreich",
+        "email": "Braulio_Hilpert36@hotmail.com",
+        "cpfCnpj": "Kd4qHdjQYs9"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "38.51"
+          "valor": 279.8
         }
       ]
     },
     {
-      "id": 32,
-      "numero": 151185,
-      "valorPremio": "398.63",
+      "id": "31",
+      "numero": 283836,
+      "valorPremio": 932.9,
       "segurado": {
-        "nome": "Mrs. Paulette Leffler",
-        "email": "Oda_Lockman@hotmail.com",
-        "cpfCnpj": "hwyKkg548WT"
+        "nome": "Veronica Vandervort",
+        "email": "Judge.Senger@gmail.com",
+        "cpfCnpj": "rA2K2oksWNC"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "34.93"
+          "valor": 804.87
         }
       ]
     },
     {
-      "id": 33,
-      "numero": 391990,
-      "valorPremio": "406.84",
+      "id": "32",
+      "numero": 431987,
+      "valorPremio": 166.77,
       "segurado": {
-        "nome": "Erma Schinner",
-        "email": "Viola99@yahoo.com",
-        "cpfCnpj": "51jHspNGggk"
+        "nome": "Myron Kovacek",
+        "email": "Francesca_Stracke48@hotmail.com",
+        "cpfCnpj": "iVW8OGkNYRZ"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "40.14"
+          "valor": 89.1
         }
       ]
     },
     {
-      "id": 34,
-      "numero": 813060,
-      "valorPremio": "405.08",
+      "id": "33",
+      "numero": 467794,
+      "valorPremio": 675.54,
       "segurado": {
-        "nome": "Michele Rutherford",
-        "email": "Gaston_Legros@gmail.com",
-        "cpfCnpj": "btPUghqJqIw"
+        "nome": "Joey O'Hara",
+        "email": "Arnold13@gmail.com",
+        "cpfCnpj": "ozb1X16tCQr"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "36.20"
+          "valor": 887.1
         }
       ]
     },
     {
-      "id": 35,
-      "numero": 378567,
-      "valorPremio": "366.44",
+      "id": "34",
+      "numero": 481166,
+      "valorPremio": 300.63,
       "segurado": {
-        "nome": "Lance Kilback",
-        "email": "Brock.Jacobs@gmail.com",
-        "cpfCnpj": "bY3oYtcxaKP"
+        "nome": "Lana McKenzie",
+        "email": "Akeem_VonRueden@gmail.com",
+        "cpfCnpj": "Kh8wn6Z5TPl"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "38.21"
+          "valor": 410.26
         }
       ]
     },
     {
-      "id": 36,
-      "numero": 203923,
-      "valorPremio": "220.75",
+      "id": "35",
+      "numero": 539588,
+      "valorPremio": 661.72,
       "segurado": {
-        "nome": "Dr. Terrance Franey",
-        "email": "Omer_Bins39@yahoo.com",
-        "cpfCnpj": "1XkYN27va6t"
+        "nome": "Moses Frami",
+        "email": "Madisyn92@gmail.com",
+        "cpfCnpj": "ostnBxORtEf"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "11.10"
+          "valor": 232.98
         }
       ]
     },
     {
-      "id": 37,
-      "numero": 633222,
-      "valorPremio": "358.21",
+      "id": "36",
+      "numero": 462112,
+      "valorPremio": 774.58,
       "segurado": {
-        "nome": "Maryann Stiedemann",
-        "email": "Mervin34@yahoo.com",
-        "cpfCnpj": "YdYV4HyCIFm"
+        "nome": "Nicole Cummerata",
+        "email": "Winfield34@yahoo.com",
+        "cpfCnpj": "DhBZU2XEy2n"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "12.98"
+          "valor": 760.21
         }
       ]
     },
     {
-      "id": 38,
-      "numero": 558619,
-      "valorPremio": "368.79",
+      "id": "37",
+      "numero": 658164,
+      "valorPremio": 230.09,
       "segurado": {
-        "nome": "Clayton Kuhn",
-        "email": "Beaulah_Kuhic@yahoo.com",
-        "cpfCnpj": "0IVXIUv76sS"
+        "nome": "Janet O'Connell",
+        "email": "Taya.Leuschke29@hotmail.com",
+        "cpfCnpj": "zrXhfOC8wB3"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "24.37"
+          "valor": 988.22
         }
       ]
     },
     {
-      "id": 39,
-      "numero": 753954,
-      "valorPremio": "135.53",
+      "id": "38",
+      "numero": 558392,
+      "valorPremio": 902.56,
       "segurado": {
-        "nome": "Johnnie Beatty",
-        "email": "Dominique.Treutel5@yahoo.com",
-        "cpfCnpj": "vxxJtcxQOOG"
+        "nome": "Dr. Rosa Abbott",
+        "email": "Shany.VonRueden@yahoo.com",
+        "cpfCnpj": "zKydbo6QJ7N"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "41.17"
+          "valor": 893.87
         }
       ]
     },
     {
-      "id": 40,
-      "numero": 523728,
-      "valorPremio": "68.97",
+      "id": "39",
+      "numero": 832495,
+      "valorPremio": 496.51,
       "segurado": {
-        "nome": "Irvin O'Connell II",
-        "email": "Gene_Greenholt@gmail.com",
-        "cpfCnpj": "B5J56s62gUx"
+        "nome": "Dr. Cecil Haag",
+        "email": "Josephine_Schneider@hotmail.com",
+        "cpfCnpj": "iVYiQlMAFrL"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "17.43"
+          "valor": 932.85
         }
       ]
     },
     {
-      "id": 41,
-      "numero": 655201,
-      "valorPremio": "172.07",
+      "id": "40",
+      "numero": 378988,
+      "valorPremio": 397.56,
       "segurado": {
-        "nome": "Laverne Schmitt",
-        "email": "Jessica_Krajcik16@hotmail.com",
-        "cpfCnpj": "4rhMs06cnEk"
+        "nome": "Clinton Morissette",
+        "email": "Dawn10@yahoo.com",
+        "cpfCnpj": "kC9rhUMLwl2"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "41.48"
+          "valor": 898.47
         }
       ]
     },
     {
-      "id": 42,
-      "numero": 463628,
-      "valorPremio": "67.99",
+      "id": "41",
+      "numero": 984360,
+      "valorPremio": 865.31,
       "segurado": {
-        "nome": "Nettie Crooks DDS",
-        "email": "Laney_Padberg@yahoo.com",
-        "cpfCnpj": "WaHnzuAWYyZ"
+        "nome": "Nicolas Upton",
+        "email": "Gene1@yahoo.com",
+        "cpfCnpj": "J1F3f7wKxTI"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "36.02"
+          "valor": 956.56
         }
       ]
     },
     {
-      "id": 43,
-      "numero": 932404,
-      "valorPremio": "367.77",
+      "id": "42",
+      "numero": 423880,
+      "valorPremio": 956.26,
       "segurado": {
-        "nome": "Christie Bosco-Prosacco",
-        "email": "Savannah_Beier94@hotmail.com",
-        "cpfCnpj": "Jfo5IqbauSK"
+        "nome": "Ted Waelchi",
+        "email": "Kasandra_Stoltenberg56@gmail.com",
+        "cpfCnpj": "ajvQKo6jOTa"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "22.00"
+          "valor": 358.62
         }
       ]
     },
     {
-      "id": 44,
-      "numero": 866761,
-      "valorPremio": "340.49",
+      "id": "43",
+      "numero": 580668,
+      "valorPremio": 363.45,
       "segurado": {
-        "nome": "Israel Brakus",
-        "email": "Jeanette.Stoltenberg59@hotmail.com",
-        "cpfCnpj": "N2UCxSAOKwb"
+        "nome": "Jody Douglas",
+        "email": "Alia_Rowe@hotmail.com",
+        "cpfCnpj": "jS7wP2h8MNg"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "17.66"
+          "valor": 491.98
         }
       ]
     },
     {
-      "id": 45,
-      "numero": 792597,
-      "valorPremio": "160.03",
+      "id": "44",
+      "numero": 557317,
+      "valorPremio": 441.88,
       "segurado": {
-        "nome": "Austin Kihn IV",
-        "email": "Darien2@yahoo.com",
-        "cpfCnpj": "yrJ5ZK4XksK"
+        "nome": "Lloyd Graham DVM",
+        "email": "Horace_Torp@yahoo.com",
+        "cpfCnpj": "LRkQ8XCHdNO"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "11.10"
+          "valor": 733.13
         }
       ]
     },
     {
-      "id": 46,
-      "numero": 938931,
-      "valorPremio": "52.70",
+      "id": "45",
+      "numero": 508920,
+      "valorPremio": 605.23,
       "segurado": {
-        "nome": "Lindsay Kassulke II",
-        "email": "Shany39@yahoo.com",
-        "cpfCnpj": "yYLoZzFJOxk"
+        "nome": "Rudy Rau",
+        "email": "Alisha24@gmail.com",
+        "cpfCnpj": "FsVqPoJ7BwE"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "44.27"
+          "valor": 446.25
         }
       ]
     },
     {
-      "id": 47,
-      "numero": 609251,
-      "valorPremio": "415.67",
+      "id": "46",
+      "numero": 739268,
+      "valorPremio": 663.39,
       "segurado": {
-        "nome": "Mr. William Murphy",
-        "email": "Jeanie.Thompson@hotmail.com",
-        "cpfCnpj": "H11lgIeRNra"
+        "nome": "Byron Barrows",
+        "email": "Orpha95@gmail.com",
+        "cpfCnpj": "xStt7CWsMdl"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "36.11"
+          "valor": 376.68
         }
       ]
     },
     {
-      "id": 48,
-      "numero": 449622,
-      "valorPremio": "179.00",
+      "id": "47",
+      "numero": 785447,
+      "valorPremio": 103.88,
       "segurado": {
-        "nome": "Charlotte Blick DDS",
-        "email": "Zechariah19@yahoo.com",
-        "cpfCnpj": "VOd0lIeRaQx"
+        "nome": "Carlton Dicki",
+        "email": "Chaim16@yahoo.com",
+        "cpfCnpj": "iKWYUZaMYqK"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "38.19"
+          "valor": 124.49
         }
       ]
     },
     {
-      "id": 49,
-      "numero": 999004,
-      "valorPremio": "64.11",
+      "id": "48",
+      "numero": 585979,
+      "valorPremio": 243.28,
       "segurado": {
-        "nome": "Hubert Streich",
-        "email": "Unique_Russel33@gmail.com",
-        "cpfCnpj": "rTZ0mH208oR"
+        "nome": "Ralph Tillman",
+        "email": "Madison.OConnell@yahoo.com",
+        "cpfCnpj": "1bFs9gwmyXG"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "18.11"
+          "valor": 461.14
         }
       ]
     },
     {
-      "id": 50,
-      "numero": 324345,
-      "valorPremio": "345.72",
+      "id": "49",
+      "numero": 349827,
+      "valorPremio": 684.89,
       "segurado": {
-        "nome": "Ms. Meredith O'Kon",
-        "email": "Ava_Jast@gmail.com",
-        "cpfCnpj": "rQQRz9CCvfl"
+        "nome": "Erica Zieme",
+        "email": "Francisca.Cronin94@yahoo.com",
+        "cpfCnpj": "mW6CT1rdKNs"
       },
       "coberturas": [
         {
           "nome": "Incêndio",
-          "valor": "44.79"
+          "valor": 875.46
+        }
+      ]
+    },
+    {
+      "id": "50",
+      "numero": 321097,
+      "valorPremio": 453.99,
+      "segurado": {
+        "nome": "Mrs. Ida Goodwin V",
+        "email": "Luella39@gmail.com",
+        "cpfCnpj": "chEILDOuaPZ"
+      },
+      "coberturas": [
+        {
+          "nome": "Incêndio",
+          "valor": 879.07
         }
       ]
     }
