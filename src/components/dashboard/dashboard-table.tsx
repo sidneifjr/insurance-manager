@@ -8,7 +8,7 @@ import {
   ShieldAlert,
   Trophy,
 } from 'lucide-react'
-import { MouseEvent, useState } from 'react'
+import { MouseEvent } from 'react'
 
 import { deleteItem } from '@/api/deleteItem'
 import {

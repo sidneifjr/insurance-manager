@@ -5,7 +5,6 @@ import type { Metadata } from 'next'
 import { ReactNode } from 'react'
 
 import { Header } from '@/components/header'
-import { SideMenu } from '@/components/side-menu'
 
 export const metadata: Metadata = {
   title: {
@@ -26,10 +25,8 @@ export default function RootLayout({
       <body className={`flex min-h-screen flex-col ${GeistSans.className}`}>
         <Header />
 
-        <main className="grid flex-1 grid-cols-12">
-          <SideMenu />
-
-          <section className="col-span-10 p-4">{children}</section>
+        <main className="grid flex-1 grid-cols-12 p-8">
+          <section className="col-span-12">{children}</section>
         </main>
       </body>
     </html>
