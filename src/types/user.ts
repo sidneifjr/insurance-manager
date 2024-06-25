@@ -10,7 +10,7 @@ interface Segurado {
 }
 
 export type User = {
-  id: number
+  id: string
   numero: number
   valorPremio: number
   segurado: Segurado

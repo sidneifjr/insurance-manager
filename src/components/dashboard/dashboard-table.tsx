@@ -8,7 +8,9 @@ import {
   ShieldAlert,
   Trophy,
 } from 'lucide-react'
+import { MouseEvent, useState } from 'react'
 
+import { deleteItem } from '@/api/deleteItem'
 import {
   Pagination,
   PaginationContent,
@@ -27,6 +29,8 @@ import {
 import { usePagination } from '@/hooks/usePagination'
 import { formatCurrency } from '@/modules/formatCurrency'
 import { User } from '@/types/user'
+
+import { Button } from '../ui/button'
 
 type DashboardTableTypes = {
   data: User[]
@@ -68,6 +72,12 @@ export function DashboardTable({ data }: DashboardTableTypes) {
     handlePreviousPage,
   } = usePagination(data)
 
+  function handleDelete(e: MouseEvent<HTMLButtonElement>, userId: string) {
+    e.preventDefault()
+
+    deleteItem(userId)
+  }
+
   return (
     <>
       <Table>
@@ -89,7 +99,7 @@ export function DashboardTable({ data }: DashboardTableTypes) {
           {currentItems.map((item) => {
             return (
               <TableRow key={item.id}>
-                <TableCell className="font-medium">{item.numero}</TableCell>
+                <TableCell className="font-medium">#{item.numero}</TableCell>
                 <TableCell>{formatCurrency(item.valorPremio)}</TableCell>
                 <TableCell>{item.segurado.nome}</TableCell>
                 <TableCell>{item.segurado.email}</TableCell>
@@ -102,6 +112,15 @@ export function DashboardTable({ data }: DashboardTableTypes) {
                     </TableCell>
                   )
                 })}
+
+                <TableCell>
+                  <Button
+                    variant="destructive"
+                    onClick={(e) => handleDelete(e, item.id)}
+                  >
+                    Delete
+                  </Button>
+                </TableCell>
               </TableRow>
             )
           })}

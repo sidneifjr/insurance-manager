@@ -13,8 +13,8 @@ export async function generateFakeData() {
     content: [],
   }
 
-  for (let i = 1; i <= 50; i++) {
-    const id = i
+  for (let i = 0; i <= 50; i++) {
+    const id = String(i)
     const numero = faker.number.int({ min: 100000, max: 999999 })
     const valorPremio = Number(faker.finance.amount())
     const nome = faker.person.fullName()
