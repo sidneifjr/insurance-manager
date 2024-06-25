@@ -33,27 +33,27 @@ type DashboardTableTypes = {
 const tableCategories = [
   {
     name: 'Número',
-    icon: <Hash />,
+    icon: <Hash width={20} height={20} />,
   },
   {
     name: 'Valor Prêmio',
-    icon: <Trophy />,
+    icon: <Trophy width={20} height={20} />,
   },
   {
     name: 'Nome',
-    icon: <CaseLower />,
+    icon: <CaseLower width={20} height={20} />,
   },
   {
     name: 'Email',
-    icon: <Mail />,
+    icon: <Mail width={20} height={20} />,
   },
   {
     name: 'CPF/CNPJ',
-    icon: <ShieldAlert />,
+    icon: <ShieldAlert width={20} height={20} />,
   },
   {
     name: 'Coberturas',
-    icon: <Hospital />,
+    icon: <Hospital width={20} height={20} />,
   },
 ]
 
@@ -74,7 +74,7 @@ export function DashboardTable({ data }: DashboardTableTypes) {
             {tableCategories.map((category) => {
               return (
                 <TableHead key={crypto.randomUUID()}>
-                  <span className="flex items-center gap-2">
+                  <span className="flex items-center gap-2 tracking-tight">
                     {category.icon} {category.name}
                   </span>
                 </TableHead>
@@ -87,15 +87,28 @@ export function DashboardTable({ data }: DashboardTableTypes) {
           {pagination.currentItems.map((item) => {
             return (
               <TableRow key={item.id}>
-                <TableCell className="font-medium">#{item.numero}</TableCell>
-                <TableCell>{formatCurrency(item.valorPremio)}</TableCell>
-                <TableCell>{item.segurado.nome}</TableCell>
-                <TableCell>{item.segurado.email}</TableCell>
-                <TableCell>{item.segurado.cpfCnpj}</TableCell>
+                <TableCell className="font-medium tracking-tight">
+                  #{item.numero}
+                </TableCell>
+                <TableCell className="tracking-tight">
+                  {formatCurrency(item.valorPremio)}
+                </TableCell>
+                <TableCell className="tracking-tight">
+                  {item.segurado.nome}
+                </TableCell>
+                <TableCell className="tracking-tight">
+                  {item.segurado.email}
+                </TableCell>
+                <TableCell className="tracking-tight">
+                  {item.segurado.cpfCnpj}
+                </TableCell>
 
                 {item.coberturas.map((cobertura) => {
                   return (
-                    <TableCell key={crypto.randomUUID()}>
+                    <TableCell
+                      className="tracking-tight"
+                      key={crypto.randomUUID()}
+                    >
                       {cobertura.nome}, {formatCurrency(cobertura.valor)}
                     </TableCell>
                   )

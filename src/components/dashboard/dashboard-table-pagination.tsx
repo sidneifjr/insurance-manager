@@ -24,7 +24,7 @@ export function DashboardTablePagination({
   return (
     <Pagination className="flex-1">
       <PaginationContent className="flex gap-2">
-        <PaginationItem>
+        <PaginationItem className="tracking-tight">
           <PaginationPrevious
             className={
               currentPage - 1 > 0
@@ -35,11 +35,11 @@ export function DashboardTablePagination({
           />
         </PaginationItem>
 
-        <PaginationItem>
+        <PaginationItem className="tracking-tight">
           {currentPage} out of {totalPages}
         </PaginationItem>
 
-        <PaginationItem>
+        <PaginationItem className="tracking-tight">
           <PaginationNext
             className={
               currentPage < totalPages
