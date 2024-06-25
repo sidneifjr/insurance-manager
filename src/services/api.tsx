@@ -13,17 +13,19 @@
  **/
 
 export async function api(path: string, init?: RequestInit) {
-  // const baseUrl = env.PUBLIC_API_BASE_URL
+  // const baseUrl = env.NEXT_PUBLIC_API_BASE_URL
   const baseUrl = 'http://localhost:3001'
   const url = new URL(path, baseUrl)
 
   try {
     const response = await fetch(url, init)
-    const data = await response.json()
 
     if (!response.ok) {
-      throw new Error('Fetch was unsuccessfull. Is the query parameter valid?')
+      const errorText = await response.text()
+      throw new Error(`Erro na requisição: ${errorText}`)
     }
+
+    const data = await response.json()
 
     return data
   } catch (error) {
