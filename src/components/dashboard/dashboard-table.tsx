@@ -12,13 +12,6 @@ import { MouseEvent } from 'react'
 
 import { deleteItem } from '@/api/deleteItem'
 import {
-  Pagination,
-  PaginationContent,
-  PaginationItem,
-  PaginationNext,
-  PaginationPrevious,
-} from '@/components/ui/pagination'
-import {
   Table,
   TableBody,
   TableCell,
@@ -31,6 +24,7 @@ import { formatCurrency } from '@/modules/formatCurrency'
 import { User } from '@/types/user'
 
 import { Button } from '../ui/button'
+import { DashboardTablePagination } from './dashboard-table-pagination'
 
 type DashboardTableTypes = {
   data: User[]
@@ -64,13 +58,7 @@ const tableCategories = [
 ]
 
 export function DashboardTable({ data }: DashboardTableTypes) {
-  const {
-    currentPage,
-    totalPages,
-    currentItems,
-    handleNextPage,
-    handlePreviousPage,
-  } = usePagination(data)
+  const pagination = usePagination(data)
 
   function handleDelete(e: MouseEvent<HTMLButtonElement>, userId: string) {
     e.preventDefault()
@@ -79,8 +67,8 @@ export function DashboardTable({ data }: DashboardTableTypes) {
   }
 
   return (
-    <>
-      <Table>
+    <div className="relative flex flex-col gap-8">
+      <Table className="flex-1">
         <TableHeader>
           <TableRow>
             {tableCategories.map((category) => {
@@ -96,7 +84,7 @@ export function DashboardTable({ data }: DashboardTableTypes) {
         </TableHeader>
 
         <TableBody>
-          {currentItems.map((item) => {
+          {pagination.currentItems.map((item) => {
             return (
               <TableRow key={item.id}>
                 <TableCell className="font-medium">#{item.numero}</TableCell>
@@ -127,35 +115,7 @@ export function DashboardTable({ data }: DashboardTableTypes) {
         </TableBody>
       </Table>
 
-      <Pagination>
-        <PaginationContent className="flex gap-2">
-          <PaginationItem>
-            <PaginationPrevious
-              className={
-                currentPage - 1 > 0
-                  ? 'cursor-pointer'
-                  : 'pointer-events-none cursor-not-allowed text-gray-400'
-              }
-              onClick={(e) => handlePreviousPage(e)}
-            />
-          </PaginationItem>
-
-          <PaginationItem>
-            {currentPage} out of {totalPages}
-          </PaginationItem>
-
-          <PaginationItem>
-            <PaginationNext
-              className={
-                currentPage < totalPages
-                  ? 'cursor-pointer'
-                  : 'pointer-events-none cursor-not-allowed text-gray-400'
-              }
-              onClick={(e) => handleNextPage(e)}
-            />
-          </PaginationItem>
-        </PaginationContent>
-      </Pagination>
-    </>
+      <DashboardTablePagination {...pagination} />
+    </div>
   )
 }
