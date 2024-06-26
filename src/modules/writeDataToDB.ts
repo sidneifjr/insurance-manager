@@ -17,7 +17,7 @@ export async function writeDataToDB() {
     try {
       await fs.mkdir(dataDirectory, { recursive: true })
 
-      if (existsSync('db.json')) {
+      if (!existsSync('db.json')) {
         await fs.writeFile(filePath, readableFakeData)
         console.log('Data written to db.json successfully')
       }
