@@ -1,4 +1,4 @@
-interface Coberturas {
+interface Cobertura {
   nome: string
   valor: number
 }
@@ -14,5 +14,5 @@ export type User = {
   numero: number
   valorPremio: number
   segurado: Segurado
-  coberturas: Coberturas[]
+  coberturas: Cobertura[]
 }
