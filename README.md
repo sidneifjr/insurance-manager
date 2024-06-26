@@ -17,6 +17,11 @@ Hospede o código em uma plataforma de versionamento (Github, Gitlab e etc) e en
 - [ ] A aplicação precisa ter interface coesa e responsiva.
 - [x] Deve-se mockar a API baseando-se nos JSONS de exemplo (vide seção API). Recomendamos o uso da lib MirageJS mas qualquer outra pode ser utilizada.
 - [ ] Todas as operações devem ser implementadas (CRUD).
+|-> [x] Create (POST): adicionar item à database, após preencher e submeter um formulário ou outra forma.
+|-> [x] Read (GET): fetch de dados à database.
+|-> [ ] Update (PATCH).
+|-> [x] Delete (DELETE): deletar item ao clicar no botão próximo ao mesmo.
+
 - [ ] Qualquer lib é liberada desde que importada corretamente.
 - [ ] Testes.
 - [ ] O código será executado, portanto ele precisa estar compilável e executável.
@@ -106,8 +111,6 @@ Boilerplate gerado via [Progenitor](https://github.com/sidneifjr/Progenitor).
 Como não mencionaram preferência por e2e ou unitários, fazer o que for mais conveniente ou rápido.
 
 Design:
-
-pizzashop, da Rocketseat!
 
 https://dribbble.com/tags/minimal-dashboard
 
