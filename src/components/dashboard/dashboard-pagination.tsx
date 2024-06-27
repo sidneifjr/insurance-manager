@@ -8,19 +8,19 @@ import {
   PaginationPrevious,
 } from '@/components/ui/pagination'
 
-type DashboardTablePaginationTypes = {
+type DashboardPaginationTypes = {
   currentPage: number
   totalPages: number
   handlePreviousPage: (e: MouseEvent<HTMLAnchorElement>) => void
   handleNextPage: (e: MouseEvent<HTMLAnchorElement>) => void
 }
 
-export function DashboardTablePagination({
+export function DashboardPagination({
   currentPage,
   totalPages,
   handlePreviousPage,
   handleNextPage,
-}: DashboardTablePaginationTypes) {
+}: DashboardPaginationTypes) {
   return (
     <Pagination className="flex-1">
       <PaginationContent className="flex gap-2">

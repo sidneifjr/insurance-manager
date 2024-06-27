@@ -1,5 +1,5 @@
 import { getItems } from '@/api/getItems'
-import { DashboardTable } from '@/components/dashboard/dashboard-table'
+import { Dashboard } from '@/components/dashboard'
 import { ModalForm } from '@/components/modal/modal-form'
 import { H2 } from '@/components/typography/h2'
 import { Paragraph } from '@/components/typography/paragraph'
@@ -24,7 +24,7 @@ export default async function Home() {
         <ModalForm />
       </div>
 
-      <DashboardTable data={data} />
+      <Dashboard data={data} />
     </div>
   )
 }
