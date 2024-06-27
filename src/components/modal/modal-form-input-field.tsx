@@ -5,15 +5,16 @@ import { FieldError, UseFormRegister } from 'react-hook-form'
 import { Input } from '@/components/ui/input'
 
 interface Inputs {
+  nome: 'email' | 'numero' | 'valorPremio' | 'nome' | 'cpfCNPJ' | 'coberturas'
   numero: string
   valorPremio: string
-  nome: 'email' | 'numero' | 'valorPremio' | 'nome' | 'cpfCNPJ' | 'coberturas'
   email: string
   cpfCNPJ: string
   coberturas: string
 }
 
-interface InputFieldTypes extends Inputs {
+type InputFieldTypes = {
+  name: 'email' | 'numero' | 'valorPremio' | 'nome' | 'cpfCNPJ' | 'coberturas'
   placeholder: string
   error: FieldError | undefined
   errorMessage: string
@@ -21,12 +22,7 @@ interface InputFieldTypes extends Inputs {
 }
 
 export function ModalFormInputField({
-  numero,
-  valorPremio,
   name,
-  email,
-  cpfCNPJ,
-  coberturas,
   placeholder,
   error,
   errorMessage,
