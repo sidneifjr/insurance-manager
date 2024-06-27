@@ -10,9 +10,11 @@ import {
   Trash2,
   Trophy,
 } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 import { MouseEvent, useState } from 'react'
 
 import { deleteItem } from '@/api/deleteItem'
+import { updateItem } from '@/api/updateItem'
 import {
   Table,
   TableBody,
@@ -62,6 +64,7 @@ const tableCategories = [
 export function DashboardTable({ data }: DashboardTableTypes) {
   const [apiData, setApiData] = useState(data)
   const pagination = usePagination(apiData)
+  const router = useRouter()
 
   async function handleDelete(
     e: MouseEvent<HTMLButtonElement>,
@@ -76,6 +79,17 @@ export function DashboardTable({ data }: DashboardTableTypes) {
     )
 
     setApiData(removeDeletedItemFromArray)
+  }
+
+  async function handleUpdate(
+    e: MouseEvent<HTMLButtonElement>,
+    userId: string,
+  ) {
+    e.preventDefault()
+
+    await updateItem(userId)
+
+    router.refresh()
   }
 
   return (
@@ -134,7 +148,7 @@ export function DashboardTable({ data }: DashboardTableTypes) {
                   <div className="flex gap-4">
                     <Button
                       variant="outline"
-                      onClick={(e) => handleDelete(e, item.id)}
+                      onClick={(e) => handleUpdate(e, item.id)}
                     >
                       <FilePenLine width={16} height={16} />
                     </Button>
