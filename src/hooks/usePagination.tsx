@@ -6,7 +6,7 @@ type PaginationTypes = User[]
 
 export function usePagination(data: PaginationTypes) {
   const [currentPage, setCurrentPage] = useState(1)
-  const [itemsPerPage, setItemsPerPage] = useState(10)
+  const [itemsPerPage, setItemsPerPage] = useState(12)
 
   const totalPages = Math.ceil(data.length / itemsPerPage)
   const startIndex = (currentPage - 1) * itemsPerPage
