@@ -10,11 +10,7 @@ import {
   Trash2,
   Trophy,
 } from 'lucide-react'
-import { useRouter } from 'next/navigation'
-import { MouseEvent, useState } from 'react'
 
-import { deleteItem } from '@/api/deleteItem'
-import { updateItem } from '@/api/updateItem'
 import {
   Table,
   TableBody,
@@ -23,6 +19,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
+import { useCrud } from '@/hooks/useCrud'
 import { usePagination } from '@/hooks/usePagination'
 import { formatCurrency } from '@/modules/formatCurrency'
 import { User } from '@/types/user'
@@ -62,35 +59,8 @@ const tableCategories = [
 ]
 
 export function DashboardTable({ data }: DashboardTableTypes) {
-  const [apiData, setApiData] = useState(data)
+  const { apiData, handleDelete, handleUpdate } = useCrud(data)
   const pagination = usePagination(apiData)
-  const router = useRouter()
-
-  async function handleDelete(
-    e: MouseEvent<HTMLButtonElement>,
-    userId: string,
-  ) {
-    e.preventDefault()
-
-    await deleteItem(userId)
-
-    const removeDeletedItemFromArray = apiData.filter(
-      (item) => item.id !== userId,
-    )
-
-    setApiData(removeDeletedItemFromArray)
-  }
-
-  async function handleUpdate(
-    e: MouseEvent<HTMLButtonElement>,
-    userId: string,
-  ) {
-    e.preventDefault()
-
-    await updateItem(userId)
-
-    router.refresh()
-  }
 
   return (
     <div className="relative flex flex-col gap-8">

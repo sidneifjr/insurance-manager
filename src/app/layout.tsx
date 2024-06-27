@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import { ReactNode } from 'react'
 
 import { Header } from '@/components/header'
+import { Toaster } from '@/components/ui/sonner'
 
 export const metadata: Metadata = {
   title: {
@@ -27,6 +28,8 @@ export default function RootLayout({
 
         <main className="grid flex-1 grid-cols-12 p-8">
           <section className="col-span-12">{children}</section>
+
+          <Toaster richColors />
         </main>
       </body>
     </html>

@@ -4,9 +4,11 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { z } from 'zod'
 
-import { createItem } from '@/api/createItem'
+import { useCrud } from './useCrud'
 
 export function useModal() {
+  const { handleCreate } = useCrud()
+
   const ModalFormSchema = z.object({
     numero: z.string().min(1, 'Por favor, defina o número do assegurado.'),
 
@@ -43,7 +45,7 @@ export function useModal() {
   ) => {
     console.log(data)
 
-    await createItem(data)
+    handleCreate(data)
   }
 
   return { register, handleSubmit, errors, isSubmitting, onSubmit }
