@@ -19,7 +19,7 @@ export async function createItem(data: ModalFormInputs) {
       },
 
       body: JSON.stringify({
-        id: Number(Math.round(Math.random() * 10000)),
+        id: String(Math.round(Math.random() * 10000)),
         numero: data.numero,
         valorPremio: data.valorPremio,
         segurado: {
