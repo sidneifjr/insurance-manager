@@ -2,7 +2,7 @@
 
 import { X } from 'lucide-react'
 
-import { InputField } from '@/components/modal/input-field'
+import { ModalFormInputField } from '@/components/modal/modal-form-input-field'
 import {
   Dialog,
   DialogClose,
@@ -89,7 +89,7 @@ export function ModalForm() {
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
           {inputs.map((input) => {
             // @ts-expect-error: type error does not make sense.
-            return <InputField key={crypto.randomUUID()} {...input} />
+            return <ModalFormInputField key={crypto.randomUUID()} {...input} />
           })}
 
           <Button

@@ -20,7 +20,7 @@ interface InputFieldTypes extends Inputs {
   register: UseFormRegister<Inputs>
 }
 
-export function InputField({
+export function ModalFormInputField({
   numero,
   valorPremio,
   name,
