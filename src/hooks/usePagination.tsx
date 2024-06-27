@@ -2,9 +2,7 @@ import { MouseEvent, useState } from 'react'
 
 import { User } from '@/types/user'
 
-type PaginationTypes = User[]
-
-export function usePagination(data: PaginationTypes) {
+export function usePagination(data: User[]) {
   const [currentPage, setCurrentPage] = useState(1)
   const [itemsPerPage, setItemsPerPage] = useState(12)
 
