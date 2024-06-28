@@ -26,6 +26,7 @@ export function DashboardPagination({
       <PaginationContent className="flex gap-2">
         <PaginationItem className="tracking-tight">
           <PaginationPrevious
+            data-testid="pagination-prev"
             className={
               currentPage - 1 > 0
                 ? 'cursor-pointer text-slate-600'
@@ -35,12 +36,14 @@ export function DashboardPagination({
           />
         </PaginationItem>
 
-        <PaginationItem className="tracking-tight">
-          {currentPage} out of {totalPages}
+        <PaginationItem className="flex gap-1 tracking-tight">
+          <span data-testid="pagination-current-page">{currentPage}</span>out of{' '}
+          <span data-testid="pagination-total-pages">{totalPages}</span>
         </PaginationItem>
 
         <PaginationItem className="tracking-tight">
           <PaginationNext
+            data-testid="pagination-next"
             className={
               currentPage < totalPages
                 ? 'cursor-pointer text-slate-600'

@@ -78,6 +78,7 @@ export function Dashboard({ data }: DashboardTypes) {
                 <Button
                   variant="outline"
                   onClick={(e) => handleUpdate(e, item.id)}
+                  data-testid="update-user"
                 >
                   <FilePenLine width={16} height={16} />
                 </Button>
@@ -85,6 +86,7 @@ export function Dashboard({ data }: DashboardTypes) {
                 <Button
                   variant="destructive"
                   onClick={(e) => handleDelete(e, item.id)}
+                  data-testid="delete-user"
                 >
                   <Trash2 width={16} height={16} />
                 </Button>
