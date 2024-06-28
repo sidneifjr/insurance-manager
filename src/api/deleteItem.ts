@@ -3,7 +3,7 @@ import { User } from '@/types/user'
 
 export async function deleteItem(id: string) {
   try {
-    const test: Promise<User> = await api(`/content/${id}`, {
+    const test: Promise<User> = await api(`/apolices/${id}`, {
       method: 'DELETE',
     })
 

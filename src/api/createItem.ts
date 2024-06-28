@@ -12,7 +12,7 @@ type ModalFormInputs = {
 
 export async function createItem(data: ModalFormInputs) {
   try {
-    const test: Promise<User> = (await api('/content', {
+    const test: Promise<User> = (await api('/apolices', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',

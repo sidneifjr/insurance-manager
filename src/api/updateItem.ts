@@ -20,7 +20,7 @@ const mockData = {
 
 export async function updateItem(id: string) {
   try {
-    const res: Promise<User> = await api(`/content/${id}`, {
+    const res: Promise<User> = await api(`/apolices/${id}`, {
       method: 'PUT',
       body: JSON.stringify(mockData),
       headers: {
