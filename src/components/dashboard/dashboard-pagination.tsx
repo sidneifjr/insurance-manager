@@ -28,7 +28,7 @@ export function DashboardPagination({
           <PaginationPrevious
             className={
               currentPage - 1 > 0
-                ? 'cursor-pointer'
+                ? 'cursor-pointer text-slate-600'
                 : 'pointer-events-none cursor-not-allowed text-gray-400'
             }
             onClick={(e) => handlePreviousPage(e)}
@@ -43,7 +43,7 @@ export function DashboardPagination({
           <PaginationNext
             className={
               currentPage < totalPages
-                ? 'cursor-pointer'
+                ? 'cursor-pointer text-slate-600'
                 : 'pointer-events-none cursor-not-allowed text-gray-400'
             }
             onClick={(e) => handleNextPage(e)}
