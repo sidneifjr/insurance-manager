@@ -7,7 +7,7 @@ import { deleteItem } from '@/api/deleteItem'
 import { updateItem } from '@/api/updateItem'
 import { User } from '@/types/user'
 
-export function useCrud(data: User[]) {
+export function useCrud(data?: User[]) {
   const [apiData, setApiData] = useState(data)
   const router = useRouter()
 
