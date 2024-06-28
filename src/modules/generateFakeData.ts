@@ -9,8 +9,8 @@ import { User } from '@/types/user'
 export async function generateFakeData() {
   faker.seed(123)
 
-  const data: { content: User[] } = {
-    content: [],
+  const data: { apolices: User[] } = {
+    apolices: [],
   }
 
   for (let i = 0; i <= 50; i++) {
@@ -38,7 +38,7 @@ export async function generateFakeData() {
       coberturas: [cobertura],
     }
 
-    data.content.push(item)
+    data.apolices.push(item)
   }
 
   return data
