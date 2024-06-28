@@ -14,5 +14,8 @@
   "parserOptions": {
     "sourceType": "module",
     "ecmaVersion": "latest"
+  },
+  "globals": {
+    "cy": true
   }
 }

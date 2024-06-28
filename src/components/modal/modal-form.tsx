@@ -72,18 +72,26 @@ export function ModalForm() {
   return (
     <Dialog>
       <Button asChild>
-        <DialogTrigger className="max-w-max">Cadastrar item</DialogTrigger>
+        <DialogTrigger className="max-w-max" data-testid="modal-create-user">
+          Cadastrar item
+        </DialogTrigger>
       </Button>
 
       <DialogContent className="gap-0 p-0">
         <DialogHeader className="flex flex-row items-center justify-between border-b p-6">
-          <DialogTitle className="max-w-max text-xl tracking-tight text-slate-800">
+          <DialogTitle
+            className="max-w-max text-xl tracking-tight text-slate-800"
+            data-testid="modal-header"
+          >
             Adicionar item
           </DialogTitle>
 
-          <DialogClose className="!m-0 flex max-w-max items-center rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+          <DialogClose
+            data-testid="modal-close"
+            className="!m-0 flex max-w-max items-center rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground"
+          >
+            {' '}
             <X height={20} width={20} />
-
             <span className="sr-only">Close</span>
           </DialogClose>
         </DialogHeader>
@@ -100,6 +108,7 @@ export function ModalForm() {
           <Button
             className="w-full rounded p-6 text-sm font-normal leading-6"
             disabled={isSubmitting}
+            data-testid="modal-submit"
           >
             {isSubmitting ? <Loader /> : 'Criar minha conta'}
           </Button>

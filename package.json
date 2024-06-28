@@ -35,6 +35,7 @@
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
     "@rocketseat/eslint-config": "^2.2.2",
+    "@testing-library/cypress": "^10.0.2",
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.0.0",
     "@types/node": "^20",

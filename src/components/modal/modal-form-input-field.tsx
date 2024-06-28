@@ -30,11 +30,16 @@ export function ModalFormInputField({
 }: InputFieldTypes) {
   return (
     <div className="flex flex-col gap-2">
-      {error && <p className="text-sm text-destructive">{errorMessage}</p>}
+      {error && (
+        <p className="text-sm text-destructive" data-testid={`error-${name}`}>
+          {errorMessage}
+        </p>
+      )}
 
       <Input
         className={`h-12 rounded-md border-b-[#E5E7EB] p-3 text-sm leading-6 text-[#6B7280] shadow-none ${error && 'border-destructive'}`}
         placeholder={placeholder}
+        data-testid={name}
         {...register(name, { required: true })}
       />
     </div>
