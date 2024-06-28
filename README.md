@@ -179,6 +179,11 @@ A intenção inicial era utilizar uma tabela para dispor os usuários. Embora es
 
 Esse aspecto recebeu menos atenção em comparação com as funcionalidades.
 
+
+3) Validação de variáveis ambiente.
+
+Zod é uma ótima opção, porém ocorreram falhas inesperadas durante o desenvolvimento.
+
 ## API
 
 #### GET /apolices
