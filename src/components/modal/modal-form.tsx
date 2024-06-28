@@ -75,9 +75,11 @@ export function ModalForm() {
         <DialogTrigger className="max-w-max">Cadastrar item</DialogTrigger>
       </Button>
 
-      <DialogContent>
-        <DialogHeader className="flex flex-row items-center justify-between">
-          <DialogTitle className="max-w-max">Adicionar item</DialogTitle>
+      <DialogContent className="gap-0 p-0">
+        <DialogHeader className="flex flex-row items-center justify-between border-b p-6">
+          <DialogTitle className="max-w-max text-xl tracking-tight text-slate-800">
+            Adicionar item
+          </DialogTitle>
 
           <DialogClose className="!m-0 flex max-w-max items-center rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
             <X height={20} width={20} />
@@ -86,7 +88,10 @@ export function ModalForm() {
           </DialogClose>
         </DialogHeader>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="flex flex-col gap-4 p-6"
+        >
           {inputs.map((input) => {
             // @ts-expect-error: type error does not make sense.
             return <ModalFormInputField key={crypto.randomUUID()} {...input} />
