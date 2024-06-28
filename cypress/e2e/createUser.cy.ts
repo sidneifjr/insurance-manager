@@ -1,6 +1,6 @@
 describe('create user', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000')
+    cy.visit('/')
   })
 
   it('should trigger a modal opening', () => {
@@ -18,9 +18,9 @@ describe('create user', () => {
 
     cy.get('[data-testid="modal-header"').should('have.text', 'Adicionar item')
 
-    cy.get('[data-testid="modal-close"')
-      .click()
-      .should('not.have.text', 'Adicionar item')
+    cy.get('[data-testid="modal-close"').click()
+
+    cy.should('not.have.text', 'Adicionar item')
   })
 
   it('should trigger error across all inputs in the modal', () => {
@@ -29,7 +29,6 @@ describe('create user', () => {
       .click()
 
     cy.get('[data-testid="modal-header"').should('have.text', 'Adicionar item')
-
     cy.get('[data-testid="modal-submit"]').click()
 
     cy.get('[data-testid="error-numero"]').should('exist')
@@ -47,12 +46,12 @@ describe('create user', () => {
 
     cy.get('[data-testid="modal-header"').should('have.text', 'Adicionar item')
 
-    cy.get('[data-testid="numero"]').focus().type('512475')
-    cy.get('[data-testid="valorPremio"]').focus().type('849.53')
-    cy.get('[data-testid="nome"]').focus().type('Sidnei Farias Júnior')
-    cy.get('[data-testid="email"]').focus().type('johndoe.47@gmail.com')
-    cy.get('[data-testid="cpfCNPJ"]').focus().type('u9q4jTqKTGW')
-    cy.get('[data-testid="coberturas"]').focus().type('Incêndio; 247,65')
+    cy.get('[data-testid="numero"]').type('512475')
+    cy.get('[data-testid="valorPremio"]').type('849.53')
+    cy.get('[data-testid="nome"]').type('Sidnei Farias Júnior')
+    cy.get('[data-testid="email"]').type('johndoe.47@gmail.com')
+    cy.get('[data-testid="cpfCNPJ"]').type('u9q4jTqKTGW')
+    cy.get('[data-testid="coberturas"]').type('Incêndio; 247,65')
 
     cy.get('[data-testid="modal-submit"]').click()
 

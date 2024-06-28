@@ -1,10 +1,12 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "@rocketseat/eslint-config/next"
+    "@rocketseat/eslint-config/next",
+    "plugin:cypress/recommended"
   ],
   "plugins": [
-    "simple-import-sort"
+    "simple-import-sort",
+    "cypress"
   ],
   "rules": {
     "simple-import-sort/imports": "error",
